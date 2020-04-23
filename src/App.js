@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Ships from './Ships';
 import Compare from './Compare';
 import CheckboxContainer from './CheckboxContainer';
-import Container from 'react-bootstrap/container';
+import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // TO ADD
