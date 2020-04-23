@@ -45,7 +45,7 @@ class Ships extends Component {
           this.props.shipss.map(ship => {
           if (this.props.factions.includes(ship.faction) && ship.faction.concat(" ", ship.name).toLowerCase(null).includes(this.state.content)) {
           return (
-            <Col xs={4} key={ship.id}>
+            <Col xs={12} md={4} key={ship.id}>
               <div className="shipcard-div" >
                 <div className="ship-name">{ship.faction} {ship.name}</div>
                 <div className="ShipType">{ship.type}</div>
