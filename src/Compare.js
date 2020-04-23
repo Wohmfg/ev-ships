@@ -31,7 +31,7 @@ class Compare extends Component {
           {
             this.props.comparisonShipss.map(ship => {
             return (
-              <Col xs={4} key={ship.id}>
+              <Col xs={12} md={4} key={ship.id}>
                 <div className="shipcard-div" >
                   <div className="ship-name">{ship.faction} {ship.name}</div>
                   <div className="ShipType">{ship.type}</div>
