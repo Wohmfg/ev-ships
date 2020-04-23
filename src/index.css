@@ -1,13 +1,112 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./bg2.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: rgb(245,245,255);
+}
+
+.ship-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  background-color: rgba(66, 135, 245, 0.5);
+  color: rgb(245,245,255);
+  margin-top: -2px;
+  margin-bottom: 4px;
+  border: solid rgba(245,245,255, 0.7);
+  border-width: 0 0 2px 0;
+}
+
+.ShipType {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(245,245,255);
+  font-size: 0.9em;
+  padding-bottom: 20px;
+  line-height: 0.5em;
+}
+
+.ShipStat {
+  color: rgb(72,72,72);
+}
+
+.shipcard-div {
+  background: rgba(245,245,255,0.15);
+  padding-top: 2px;
+}
+
+.bar {
+  z-index: 0;
+  background-color: rgba(150, 150, 170, 0.8);
+  height: 25px;
+  border: solid rgba(220,220,255, 0.8);
+  border-width: 0 3px 0 0;
+  position: absolute;
+}
+
+.bartext {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  z-index: 1;
+  position: absolute;
+  font-weight: 500;
+  color: rgb(245,245,255);
+}
+
+.ship-button {
+  font-weight: 500;
+  margin: 0.5rem;
+  border: none;
+  color: rgb(245,245,255);
+  overflow: hidden;
+  text-transform: uppercase;
+  width: 90px;
+  height: 25px;
+  background-color: rgba(66, 135, 245, 0.9);
+}
+
+.remove-button {
+  font-weight: 500;
+  margin: 0.5rem;
+  border: none;
+  color: rgb(245,245,255);
+  overflow: hidden;
+  text-transform: uppercase;
+  width: 90px;
+  height: 25px;
+  background-color: rgba(245, 50, 50, 0.9);
+}
+
+.detailtext {
+  color: rgb(245,245,255);
+  font-size: 0.7em;
+  line-height: 0.1em;
+}
+
+.checkbox {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  color: rgb(245,245,255);
+  line-height: 1em;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.search-bar {
+  color: rgb(245,245,255);
 }
