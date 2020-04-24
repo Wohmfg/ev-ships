@@ -26,7 +26,7 @@ class Compare extends Component {
 
   render() {
     return(
-      <Container>
+      <Container className="compare">
         <Row>
           {
             this.props.comparisonShipss.map(ship => {

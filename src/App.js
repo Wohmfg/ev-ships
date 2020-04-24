@@ -159,7 +159,7 @@ class App extends Component {
         <Container>
           <Ships searchBar={this.state.searchBar} factions={this.state.activeFactions} shipss={this.state.ships} addShip={this.addShip} getStats={this.getStats}/>
         </Container>
-        <Container>
+        <Container className="floating-compare">
           <Compare comparisonShipss={this.state.comparisonShips} getStats={this.getStats} removeShip={this.removeShip}/>
         </Container>
       </Container>

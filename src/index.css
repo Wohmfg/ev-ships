@@ -110,3 +110,14 @@ code {
 .search-bar {
   color: rgb(245,245,255);
 }
+
+.compare {
+  position: fixed;
+  top: 0px;
+  left: 5%;
+  height: 300px;
+  width: 400px;
+  z-index: 99;
+  border: solid rgba(245,245,255, 0.7);
+  border-width: 2px 2px 2px 2px;
+}
