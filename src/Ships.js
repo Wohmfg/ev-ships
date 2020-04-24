@@ -53,8 +53,8 @@ class Ships extends Component {
                 <Bar percent={this.props.getStats(ship).defence} stat="DEFENCE"/>
                 <Bar percent={this.props.getStats(ship).manoeuvreability} stat="MANOEUVRE"></Bar>
                 {this.state.manActive && (<br></br>)}
-                {this.state.manActive && (<p className="detailtext"><b>Guns</b>: {ship.guns} <b>Turrets</b>: {ship.turrets} <b>Space</b>: {ship.space} tonnes <b>Shields</b>: {ship.shields} <b>Armour</b>: {ship.armour}</p>)}
-                {this.state.manActive && (<p className="detailtext"><b>Speed</b>: {ship.speed} <b>Accel</b>: {ship.acceleration} <b>Turn</b>: {ship.turn} <b>Cargo</b>: {ship.cargo}</p>)}
+                {this.state.manActive && (<p className="detailtext"><b>Guns</b>: {ship.guns} <b>Turrets</b>: {ship.turrets} <b>Space</b>: {ship.space}t <b>Shields</b>: {ship.shields} <b>Armour</b>: {ship.armour}</p>)}
+                {this.state.manActive && (<p className="detailtext"><b>Speed</b>: {ship.speed} <b>Accel</b>: {ship.acceleration} <b>Turn</b>: {ship.turn} <b>Cargo</b>: {ship.cargo}t</p>)}
                 <p>{"\n"}</p>
                 <button className="ship-button" onClick={() => {this.handleCompare(ship)}}>Compare</button>
                 <button className="ship-button" onClick={() => {this.toggleState('manActive')}}>Details</button>
