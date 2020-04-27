@@ -91,7 +91,7 @@ class App extends Component {
   }
 
   addShip = (newShip) => {
-    if (this.state.comparisonShips.includes(newShip) !== true) {
+    if (!this.state.comparisonShips.includes(newShip)) {
       let comparisonShips = [...this.state.comparisonShips, newShip];
       this.setState({
         comparisonShips
@@ -108,8 +108,8 @@ class App extends Component {
     })
   }
 
-  checkCheckbox = (faction, boolean) => {
-    if (boolean) {
+  checkCheckbox = (faction, is) => {
+    if (is) {
       const active = this.state.activeFactions;
       active.push(faction);
       this.setState({
@@ -129,8 +129,6 @@ class App extends Component {
         })
       }
     }
-
-    console.log(boolean);
   }
 
   getStats = (ship) => {

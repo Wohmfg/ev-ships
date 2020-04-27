@@ -11,11 +11,7 @@ class Compare extends Component {
 
   toggleState = (astate) => {
     const currentState = this.state;
-    if (currentState[astate] === true) {
-      currentState[astate] = false;
-    } else {
-      currentState[astate] = true;
-    }
+    currentState[astate] = !currentState[astate];
     this.setState({currentState})
   }
 
